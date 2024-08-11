@@ -3,7 +3,6 @@ package com.algorithms.storehouse.logic.math
 class Integral(val f: (Double) -> Double) {
     fun calculate(
         a: Double, b: Int,
-//        f: (Double) -> Double,
         delta: Double
     ): Double {
         var i: Double = a

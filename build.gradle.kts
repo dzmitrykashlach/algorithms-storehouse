@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 subprojects{
-	val kotlinVersion = "1.8.21"
+	val kotlinVersion = "2.0.0"
 	version = "0.0.1-SNAPSHOT"
 	apply(plugin = "org.jetbrains.kotlin.jvm")
 	dependencies{
