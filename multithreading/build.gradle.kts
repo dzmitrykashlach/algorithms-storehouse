@@ -1,5 +1,9 @@
+val coroutines_version: String by project
+
 plugins {
     id("java")
+    kotlin("jvm")
+
 }
 
 group = "com.algorithms.multithreading"
@@ -9,8 +13,9 @@ repositories {
 }
 
 dependencies {
-//    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-//    testImplementation("org.junit.jupiter:junit-jupiter")
+    dependencies {
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version")
+    }
 }
 
 tasks.test {

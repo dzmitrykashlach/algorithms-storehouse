@@ -1,7 +1,6 @@
 package com.algorithms.storehouse.logic.math
 
 import kotlin.math.abs
-import kotlin.math.absoluteValue
 
 class Limit(val f: (Double) -> Double) {
 

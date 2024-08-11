@@ -25,4 +25,13 @@ class LimitTest {
             BigDecimal.valueOf(Limit(f).calculate(0.0, 3.0, 0.00000001)).toPlainString()
         )
     }
+
+    @Test
+    fun `2-0`() {
+        val f = fun(x: Double) = 1 / x
+        assertEquals(
+            "Infinity",
+            Limit(f).calculate(2.0, 0.0, 0.000001).toString()
+        )
+    }
 }
